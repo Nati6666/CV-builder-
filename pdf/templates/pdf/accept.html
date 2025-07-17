@@ -9,59 +9,69 @@
 
 </head>
 <body>
-<form>
-<div class="form-group mb-3">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
-  </div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <div class="form-group mb-3">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-  </div>
+<div class="container my-5">
+  <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+    <div class="card-body">
+      <h2 class="card-title mb-4 text-center">Personal Information</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label fw-semibold">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="phone">Phone</label>
-    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
-  </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="summary">Summary</label>
-    <textarea class="form-control" id="summary" name="summary" rows="3" placeholder="Write a short personal summary or objective"></textarea>
-  </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label fw-semibold">Phone</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="degree">Degree</label>
-    <input type="text" class="form-control" id="degree" name="degree" placeholder="e.g., BSc Computer Science">
-  </div>
+        <div class="mb-3">
+          <label for="summary" class="form-label fw-semibold">Summary</label>
+          <textarea class="form-control" id="summary" name="summary" rows="3" placeholder="Write a short personal summary or objective"></textarea>
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="experience">Experience</label>
-    <textarea class="form-control" id="experience" name="experience" rows="3" placeholder="Describe your work experience"></textarea>
-  </div>
+        <div class="mb-3">
+          <label for="degree" class="form-label fw-semibold">Degree</label>
+          <input type="text" class="form-control" id="degree" name="degree" placeholder="e.g., BSc Computer Science">
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="skills">Skills</label>
-    <textarea class="form-control" id="skills" name="skills" rows="2" placeholder="List your skills (comma-separated)"></textarea>
-  </div>
+        <div class="mb-3">
+          <label for="experience" class="form-label fw-semibold">Experience</label>
+          <textarea class="form-control" id="experience" name="experience" rows="3" placeholder="Describe your work experience"></textarea>
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="school">School</label>
-    <input type="text" class="form-control" id="school" name="school" placeholder="Enter your high school name">
-  </div>
+        <div class="mb-3">
+          <label for="skills" class="form-label fw-semibold">Skills</label>
+          <textarea class="form-control" id="skills" name="skills" rows="2" placeholder="List your skills (comma-separated)"></textarea>
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="university">University</label>
-    <input type="text" class="form-control" id="university" name="university" placeholder="Enter your university name">
-  </div>
+        <div class="mb-3">
+          <label for="school" class="form-label fw-semibold">School</label>
+          <input type="text" class="form-control" id="school" name="school" placeholder="Enter your high school name">
+        </div>
 
-  <div class="form-group mb-3">
-    <label for="achievements">Achievements</label>
-    <textarea class="form-control" id="achievements" name="achievements" rows="3" placeholder="List your achievements or awards"></textarea>
-  </div>
+        <div class="mb-3">
+          <label for="university" class="form-label fw-semibold">University</label>
+          <input type="text" class="form-control" id="university" name="university" placeholder="Enter your university name">
+        </div>
 
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
+        <div class="mb-4">
+          <label for="achievements" class="form-label fw-semibold">Achievements</label>
+          <textarea class="form-control" id="achievements" name="achievements" rows="3" placeholder="List your achievements or awards"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-semibold">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
     
     <!-- Bootstrap Bundle JS (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-sA+SkSYW+ZrE3jXcQkOPn6DdB2A6Egpib9FgDnnOqTj5OIQy9YtS/HZb7WphID9V" crossorigin="anonymous"></script>
